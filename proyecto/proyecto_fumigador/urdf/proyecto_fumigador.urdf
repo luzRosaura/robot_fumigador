@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="proyecto_fumigador">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0356612346735711 3.67805356615847E-07 -0.0128610641223568"
+        rpy="0 0 0" />
+      <mass
+        value="0.167760532974942" />
+      <inertia
+        ixx="3.71800544199456E-05"
+        ixy="-8.22262142266548E-09"
+        ixz="4.21907518734883E-06"
+        iyy="9.62356157495E-05"
+        iyz="-3.47433005707568E-09"
+        izz="0.000105766981173787" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://proyecto_fumigador/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://proyecto_fumigador/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Rueda_delante_derecha">
+    <inertial>
+      <origin
+        xyz="-6.6613E-16 -6.1062E-16 0.02106"
+        rpy="0 0 0" />
+      <mass
+        value="0.064311" />
+      <inertia
+        ixx="2.2707E-05"
+        ixy="-7.6233E-21"
+        ixz="-4.2246E-20"
+        iyy="2.2707E-05"
+        iyz="-3.5114E-20"
+        izz="3.3129E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://proyecto_fumigador/meshes/Rueda_delante_derecha.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://proyecto_fumigador/meshes/Rueda_delante_derecha.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rueda_delante_derecha_joint"
+    type="continuous">
+    <origin
+      xyz="0.04679 -0.073443 -0.022585"
+      rpy="1.5708 0.90612 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rueda_delante_derecha" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="100" />
+  </joint>
+  <link
+    name="Rueda_delante_izquierda">
+    <inertial>
+      <origin
+        xyz="-5.5511E-17 2.7756E-17 -0.02106"
+        rpy="0 0 0" />
+      <mass
+        value="0.064311" />
+      <inertia
+        ixx="2.2707E-05"
+        ixy="2.9646E-21"
+        ixz="3.8695E-20"
+        iyy="2.2707E-05"
+        iyz="-1.5635E-21"
+        izz="3.3129E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://proyecto_fumigador/meshes/Rueda_delante_izquierda.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://proyecto_fumigador/meshes/Rueda_delante_izquierda.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rueda_delante_izquierda_joint"
+    type="continuous">
+    <origin
+      xyz="0.046792 0.11556 -0.022583"
+      rpy="1.5708 0.22028 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rueda_delante_izquierda" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="100" />
+  </joint>
+  <link
+    name="Rueda_atras_izquierda">
+    <inertial>
+      <origin
+        xyz="2.7756E-17 4.1633E-17 -0.02106"
+        rpy="0 0 0" />
+      <mass
+        value="0.064311" />
+      <inertia
+        ixx="2.2707E-05"
+        ixy="-2.9646E-20"
+        ixz="2.0358E-21"
+        iyy="2.2707E-05"
+        iyz="-2.2088E-20"
+        izz="3.3129E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://proyecto_fumigador/meshes/Rueda_atras_izquierda.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://proyecto_fumigador/meshes/Rueda_atras_izquierda.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rueda_atras_izquierda_joint"
+    type="continuous">
+    <origin
+      xyz="-0.10336 0.11556 -0.022583"
+      rpy="1.5708 -1.1729 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rueda_atras_izquierda" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="100" />
+  </joint>
+  <link
+    name="Rueda_atras_derecha">
+    <inertial>
+      <origin
+        xyz="-0.035661 3.6781E-07 -0.012861"
+        rpy="0 0 0" />
+      <mass
+        value="0.16776" />
+      <inertia
+        ixx="3.718E-05"
+        ixy="-8.2226E-09"
+        ixz="4.2191E-06"
+        iyy="9.6236E-05"
+        iyz="-3.4743E-09"
+        izz="0.00010577" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://proyecto_fumigador/meshes/Rueda_atras_derecha.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://proyecto_fumigador/meshes/Rueda_atras_derecha.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rueda_atras_derecha_joint"
+    type="continuous">
+    <origin
+      xyz="-0.10336 -0.073443 -0.022585"
+      rpy="-1.5708 -1.0066 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rueda_atras_derecha" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="100" />
+  </joint>
+
+  <gazebo reference="base_link">
+    <mu1>2</mu1>
+    <mu2>2</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+
+  <gazebo reference="Rueda_atras_izquierda">
+    <mu1>2</mu1>
+    <mu2>2</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Gray</material>
+  </gazebo>
+
+  <gazebo reference="Rueda_delante_derecha">
+    <mu1>2</mu1>
+    <mu2>2</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Gray</material>
+  </gazebo>
+  <gazebo reference="Rueda_atras_derecha">
+    <mu1>2</mu1>
+    <mu2>2</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Gray</material>
+  </gazebo>
+  <gazebo reference="Rueda_delante_izquierda">
+    <mu1>2</mu1>
+    <mu2>2</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Gray</material>
+  </gazebo>
+
+<gazebo>
+    
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+      <updateRate>50.0</updateRate>
+      <robotNamespace>/</robotNamespace>
+
+      <leftFrontJoint>Rueda_delante_izquierda_joint</leftFrontJoint>
+      <rightFrontJoint>Rueda_delante_derecha_joint</rightFrontJoint>
+      <leftRearJoint>Rueda_atras_izquierda_joint</leftRearJoint>
+      <rightRearJoint>Rueda_atras_derecha_joint</rightRearJoint>
+
+      <wheelSeparation>1</wheelSeparation>
+      <wheelDiameter>0.45</wheelDiameter>
+      <robotBaseFrame>base_link</robotBaseFrame>
+      <torque>20</torque>
+
+      <topicName>cmd_vel</topicName>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+
+      <commandTopic>cmd_vel</commandTopic>
+      <topic_name_twist>cmd_vel</topic_name_twist>
+      <topic_name_odometry>odom</topic_name_odometry>
+      <topic_name_joint>joint</topic_name_joint>
+
+      <broadcastTF>true</broadcastTF>
+
+      <covariance_x>0.1</covariance_x>
+      <covariance_y>0.1</covariance_y>
+      <covariance_yaw>0.1</covariance_yaw>
+
+    </plugin>
+
+  </gazebo>
+</robot>
